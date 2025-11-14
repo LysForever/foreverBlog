@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/1_工具与框架/win11右键新建加入md文件/index.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/win11%E5%8F%B3%E9%94%AE%E6%96%B0%E5%BB%BA%E5%8A%A0%E5%85%A5md%E6%96%87%E4%BB%B6/\",\"title\":\"Win11右键新建加入md文件\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Win11右键新建加入md文件\",\"article\":false,\"feed\":false,\"sitemap\":false,\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"WebPage\\\",\\\"name\\\":\\\"Win11右键新建加入md文件\\\"}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/win11%E5%8F%B3%E9%94%AE%E6%96%B0%E5%BB%BA%E5%8A%A0%E5%85%A5md%E6%96%87%E4%BB%B6/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Win11右键新建加入md文件\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":0,\"words\":1},\"filePathRelative\":null,\"excerpt\":\"\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

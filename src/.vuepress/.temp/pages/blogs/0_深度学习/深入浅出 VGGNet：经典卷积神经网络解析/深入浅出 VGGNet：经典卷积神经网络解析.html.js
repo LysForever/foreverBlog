@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/0_深度学习/深入浅出 VGGNet：经典卷积神经网络解析/深入浅出 VGGNet：经典卷积神经网络解析.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20VGGNet%EF%BC%9A%E7%BB%8F%E5%85%B8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20VGGNet%EF%BC%9A%E7%BB%8F%E5%85%B8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90.html\",\"title\":\"深入浅出 VGGNet：经典卷积神经网络解析\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"深入浅出 VGGNet：经典卷积神经网络解析\",\"date\":\"2025-10-25T16:55:40.000Z\",\"categories\":[\"深度学习\"],\"tags\":[\"深度学习\"],\"sticky\":0,\"description\":\"0 概要 在深度学习的发展历程中，VGGNet是一个经典且广泛使用的卷积神经网络（CNN）架构，它在图像分类任务中表现优异。本文将带你从背景、网络结构到特点与应用，全面了解 VGGNet。本文附带源码概绍，可直接运行，方便各位从代码角度直观了解VGGNet。 1 VGGNet 的背景 VGGNet 由牛津大学视觉几何组（Visual Geometry ...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"深入浅出 VGGNet：经典卷积神经网络解析\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-10-25T16:55:40.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20VGGNet%EF%BC%9A%E7%BB%8F%E5%85%B8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90/%E6%B7%B1%E5%85%A5%E6%B5%85%E5%87%BA%20VGGNet%EF%BC%9A%E7%BB%8F%E5%85%B8%E5%8D%B7%E7%A7%AF%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"深入浅出 VGGNet：经典卷积神经网络解析\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 概要 在深度学习的发展历程中，VGGNet是一个经典且广泛使用的卷积神经网络（CNN）架构，它在图像分类任务中表现优异。本文将带你从背景、网络结构到特点与应用，全面了解 VGGNet。本文附带源码概绍，可直接运行，方便各位从代码角度直观了解VGGNet。 1 VGGNet 的背景 VGGNet 由牛津大学视觉几何组（Visual Geometry ...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"深度学习\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-10-25T16:55:40.000Z\"}]]},\"readingTime\":{\"minutes\":4.66,\"words\":1398},\"filePathRelative\":\"blogs/0_深度学习/深入浅出 VGGNet：经典卷积神经网络解析/深入浅出 VGGNet：经典卷积神经网络解析.md\",\"excerpt\":\"<h2>0 概要</h2>\\n<p>在深度学习的发展历程中，VGGNet是一个经典且广泛使用的卷积神经网络（CNN）架构，它在图像分类任务中表现优异。本文将带你从背景、网络结构到特点与应用，全面了解 VGGNet。本文附带源码概绍，可直接运行，方便各位从代码角度直观了解VGGNet。</p>\\n<h2>1 VGGNet 的背景</h2>\\n<p>VGGNet 由牛津大学视觉几何组（Visual Geometry Group）提出，在 2014 年的 ImageNet 图像分类挑战赛（ILSVRC）中表现出色。VGGNet 的主要创新是<strong>使用连续的小卷积核（3x3）和池化层堆叠</strong>，代替大卷积核，从而在保证表达能力的同时降低参数量和计算复杂度。</p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

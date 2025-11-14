@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/0_深度学习/从零理解RNN：原理与应用/从零理解RNN：原理与应用.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E4%BB%8E%E9%9B%B6%E7%90%86%E8%A7%A3RNN%EF%BC%9A%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/%E4%BB%8E%E9%9B%B6%E7%90%86%E8%A7%A3RNN%EF%BC%9A%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.html\",\"title\":\"从零理解RNN：原理与应用\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"从零理解RNN：原理与应用\",\"date\":\"2025-11-01T15:31:53.000Z\",\"categories\":[\"深度学习\"],\"tags\":[\"深度学习\"],\"sticky\":0,\"sidebar\":true,\"description\":\"0 概要 随着卷积神经网络（CNN）的迅速发展，人们发现虽然卷积在提取某些物体特征方面表现出色，但在处理序列数据时却存在局限。根本原因在于，CNN的设计初衷是如何更好地提取局部特征，而序列数据的关键在于如何捕捉前后元素之间的关系。举个例子，“我喜欢吃苹果”和“我喜欢苹果手机”中的“苹果”，在不同语境下属于不同的意义类别。如果按照传统的分类思路，很难为同...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"从零理解RNN：原理与应用\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-11-01T15:31:53.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/%E4%BB%8E%E9%9B%B6%E7%90%86%E8%A7%A3RNN%EF%BC%9A%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8/%E4%BB%8E%E9%9B%B6%E7%90%86%E8%A7%A3RNN%EF%BC%9A%E5%8E%9F%E7%90%86%E4%B8%8E%E5%BA%94%E7%94%A8.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"从零理解RNN：原理与应用\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 概要 随着卷积神经网络（CNN）的迅速发展，人们发现虽然卷积在提取某些物体特征方面表现出色，但在处理序列数据时却存在局限。根本原因在于，CNN的设计初衷是如何更好地提取局部特征，而序列数据的关键在于如何捕捉前后元素之间的关系。举个例子，“我喜欢吃苹果”和“我喜欢苹果手机”中的“苹果”，在不同语境下属于不同的意义类别。如果按照传统的分类思路，很难为同...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"深度学习\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-11-01T15:31:53.000Z\"}]]},\"readingTime\":{\"minutes\":5.76,\"words\":1729},\"filePathRelative\":\"blogs/0_深度学习/从零理解RNN：原理与应用/从零理解RNN：原理与应用.md\",\"excerpt\":\"<h2>0 概要</h2>\\n<p>随着卷积神经网络（CNN）的迅速发展，人们发现虽然卷积在提取某些物体特征方面表现出色，但在处理序列数据时却存在局限。根本原因在于，CNN的设计初衷是<strong>如何更好地提取局部特征</strong>，而序列数据的关键在于<strong>如何捕捉前后元素之间的关系</strong>。举个例子，“我喜欢吃苹果”和“我喜欢苹果手机”中的“苹果”，在不同语境下属于不同的意义类别。如果按照传统的分类思路，很难为同一个词打上统一的标签。针对这一问题，循环神经网络（RNN）应运而生，它能够有效处理序列数据，捕捉上下文之间的依赖关系，从而解决传统方法难以处理的序列任务。</p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/0_深度学习/DenseNet：密集连接网络解析与实践/index.html.vue"
+const data = JSON.parse("{\"path\":\"/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/DenseNet%EF%BC%9A%E5%AF%86%E9%9B%86%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90%E4%B8%8E%E5%AE%9E%E8%B7%B5/\",\"title\":\"Dense Net：密集连接网络解析与实践\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Dense Net：密集连接网络解析与实践\",\"article\":false,\"feed\":false,\"sitemap\":false,\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"WebPage\\\",\\\"name\\\":\\\"Dense Net：密集连接网络解析与实践\\\"}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/DenseNet%EF%BC%9A%E5%AF%86%E9%9B%86%E8%BF%9E%E6%8E%A5%E7%BD%91%E7%BB%9C%E8%A7%A3%E6%9E%90%E4%B8%8E%E5%AE%9E%E8%B7%B5/\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Dense Net：密集连接网络解析与实践\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"website\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}]]},\"readingTime\":{\"minutes\":0,\"words\":1},\"filePathRelative\":null,\"excerpt\":\"\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

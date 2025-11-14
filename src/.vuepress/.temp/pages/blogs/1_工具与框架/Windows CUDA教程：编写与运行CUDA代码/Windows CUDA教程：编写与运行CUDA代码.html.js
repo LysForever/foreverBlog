@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/1_工具与框架/Windows CUDA教程：编写与运行CUDA代码/Windows CUDA教程：编写与运行CUDA代码.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/Windows%20CUDA%E6%95%99%E7%A8%8B%EF%BC%9A%E7%BC%96%E5%86%99%E4%B8%8E%E8%BF%90%E8%A1%8CCUDA%E4%BB%A3%E7%A0%81/Windows%20CUDA%E6%95%99%E7%A8%8B%EF%BC%9A%E7%BC%96%E5%86%99%E4%B8%8E%E8%BF%90%E8%A1%8CCUDA%E4%BB%A3%E7%A0%81.html\",\"title\":\"Windows CUDA教程：编写与运行CUDA代码\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Windows CUDA教程：编写与运行CUDA代码\",\"date\":\"2025-10-18T23:39:52.000Z\",\"categories\":[\"工具与框架\"],\"tags\":[\"cuda\",\"环境配置\"],\"sticky\":1,\"description\":\"0 概要 本次主要介绍在 Windows 环境下运行 CUDA 代码的具体方法，并结合个人实践中遇到的问题进行讲解，希望能帮助大家顺利完成配置，避免常见错误。 1 环境配置 1.1 cuda安装 要想运行cuda，首先必须安装cuda，在这里有一个坑，就是后续运行代码的编辑器visual studio与cuda之间必须要兼容，否则会出很多问题，后续会讲...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Windows CUDA教程：编写与运行CUDA代码\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-10-18T23:39:52.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/Windows%20CUDA%E6%95%99%E7%A8%8B%EF%BC%9A%E7%BC%96%E5%86%99%E4%B8%8E%E8%BF%90%E8%A1%8CCUDA%E4%BB%A3%E7%A0%81/Windows%20CUDA%E6%95%99%E7%A8%8B%EF%BC%9A%E7%BC%96%E5%86%99%E4%B8%8E%E8%BF%90%E8%A1%8CCUDA%E4%BB%A3%E7%A0%81.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Windows CUDA教程：编写与运行CUDA代码\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 概要 本次主要介绍在 Windows 环境下运行 CUDA 代码的具体方法，并结合个人实践中遇到的问题进行讲解，希望能帮助大家顺利完成配置，避免常见错误。 1 环境配置 1.1 cuda安装 要想运行cuda，首先必须安装cuda，在这里有一个坑，就是后续运行代码的编辑器visual studio与cuda之间必须要兼容，否则会出很多问题，后续会讲...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"环境配置\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"cuda\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-10-18T23:39:52.000Z\"}]]},\"readingTime\":{\"minutes\":2.88,\"words\":865},\"filePathRelative\":\"blogs/1_工具与框架/Windows CUDA教程：编写与运行CUDA代码/Windows CUDA教程：编写与运行CUDA代码.md\",\"excerpt\":\"<h2>0 概要</h2>\\n<p>本次主要介绍在 Windows 环境下运行 CUDA 代码的具体方法，并结合个人实践中遇到的问题进行讲解，希望能帮助大家顺利完成配置，避免常见错误。</p>\\n<h2>1 环境配置</h2>\\n<h3>1.1 cuda安装</h3>\\n<p>要想运行cuda，首先必须安装cuda，在这里有一个坑，就是后续运行代码的编辑器visual studio与cuda之间必须要兼容，否则会出很多问题，后续会讲到二者之间的配置兼容。</p>\\n<p><strong>确定cuda安装版本</strong>：命令行输入下述指令，右上角会出现CUDA Version，代表你可以下载的最大版本不得超过这个指标，比如我的是12.5，也即cuda安装版本不能超过这个版本</p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

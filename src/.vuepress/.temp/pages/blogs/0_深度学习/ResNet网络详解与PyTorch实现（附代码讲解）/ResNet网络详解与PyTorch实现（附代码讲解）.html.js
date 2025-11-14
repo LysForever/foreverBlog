@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/0_深度学习/ResNet网络详解与PyTorch实现（附代码讲解）/ResNet网络详解与PyTorch实现（附代码讲解）.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/ResNet%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EPyTorch%E5%AE%9E%E7%8E%B0%EF%BC%88%E9%99%84%E4%BB%A3%E7%A0%81%E8%AE%B2%E8%A7%A3%EF%BC%89/ResNet%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EPyTorch%E5%AE%9E%E7%8E%B0%EF%BC%88%E9%99%84%E4%BB%A3%E7%A0%81%E8%AE%B2%E8%A7%A3%EF%BC%89.html\",\"title\":\"ResNet网络详解与PyTorch实现（附代码讲解）\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"ResNet网络详解与PyTorch实现（附代码讲解）\",\"date\":\"2025-10-31T08:45:00.000Z\",\"categories\":[\"深度学习\"],\"tags\":[\"深度学习\"],\"sticky\":1,\"description\":\"0 引言 作为卷积神经网络的一代强者，凡是学习过深度学习的，无不了解过这个神经网络架构，而其作为何凯明的一代创造，如今已经在其身上诞生过许许多多的“子孙”残差网络，而今天，将带大家一领其风骚。 1 创新点 为什么他能让网络训练的更深？ 这是作者何凯明一直在思考的问题，而这篇论文的核心创新正是为了解决这一点。传统的卷积神经网络在层数增加时，往往会出现“退...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"ResNet网络详解与PyTorch实现（附代码讲解）\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-10-31T08:45:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/ResNet%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EPyTorch%E5%AE%9E%E7%8E%B0%EF%BC%88%E9%99%84%E4%BB%A3%E7%A0%81%E8%AE%B2%E8%A7%A3%EF%BC%89/ResNet%E7%BD%91%E7%BB%9C%E8%AF%A6%E8%A7%A3%E4%B8%8EPyTorch%E5%AE%9E%E7%8E%B0%EF%BC%88%E9%99%84%E4%BB%A3%E7%A0%81%E8%AE%B2%E8%A7%A3%EF%BC%89.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"ResNet网络详解与PyTorch实现（附代码讲解）\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 引言 作为卷积神经网络的一代强者，凡是学习过深度学习的，无不了解过这个神经网络架构，而其作为何凯明的一代创造，如今已经在其身上诞生过许许多多的“子孙”残差网络，而今天，将带大家一领其风骚。 1 创新点 为什么他能让网络训练的更深？ 这是作者何凯明一直在思考的问题，而这篇论文的核心创新正是为了解决这一点。传统的卷积神经网络在层数增加时，往往会出现“退...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"深度学习\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-10-31T08:45:00.000Z\"}]]},\"readingTime\":{\"minutes\":6.51,\"words\":1953},\"filePathRelative\":\"blogs/0_深度学习/ResNet网络详解与PyTorch实现（附代码讲解）/ResNet网络详解与PyTorch实现（附代码讲解）.md\",\"excerpt\":\"<h2>0 引言</h2>\\n<p>作为卷积神经网络的一代强者，凡是学习过深度学习的，无不了解过这个神经网络架构，而其作为何凯明的一代创造，如今已经在其身上诞生过许许多多的“子孙”残差网络，而今天，将带大家一领其风骚。</p>\\n<h2>1 创新点</h2>\\n<blockquote>\\n<p>为什么他能让网络训练的更深？</p>\\n</blockquote>\\n<p>这是作者何凯明一直在思考的问题，而这篇论文的核心创新正是为了解决这一点。传统的卷积神经网络在层数增加时，往往会出现“<strong>退化问题（degradation problem）</strong>”：随着深度加深，训练误差反而上升，而不是如预期那样下降。其根本原因在于<strong>梯度消失与梯度爆炸</strong>，导致模型难以有效更新参数。</p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

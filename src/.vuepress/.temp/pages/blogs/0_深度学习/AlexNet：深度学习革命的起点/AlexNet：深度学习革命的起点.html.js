@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/0_深度学习/AlexNet：深度学习革命的起点/AlexNet：深度学习革命的起点.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/AlexNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E9%9D%A9%E5%91%BD%E7%9A%84%E8%B5%B7%E7%82%B9/AlexNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E9%9D%A9%E5%91%BD%E7%9A%84%E8%B5%B7%E7%82%B9.html\",\"title\":\"AlexNet：深度学习革命的起点\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"AlexNet：深度学习革命的起点\",\"date\":\"2025-10-24T10:08:50.000Z\",\"categories\":[\"深度学习\"],\"tags\":[\"深度学习\"],\"sticky\":0,\"description\":\"0 引言 2012 年，AlexNet 在 ImageNet 图像识别竞赛中取得了突破性的成绩，错误率从 26% 一举降到 15.3%，标志着深度学习正式进入计算机视觉的主流舞台。作为推动 AI 浪潮的重要模型，AlexNet 以其创新的网络结构和训练策略，彻底改变了传统机器学习在图像识别领域的地位。 这篇博客将从结构原理、关键技术、训练方法和影响力等...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"AlexNet：深度学习革命的起点\\\",\\\"image\\\":[\\\"https://i-blog.csdnimg.cn/direct/e75c0e1a954441ce90ba9a350bb6e50b.png\\\"],\\\"datePublished\\\":\\\"2025-10-24T10:08:50.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/0_%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/AlexNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E9%9D%A9%E5%91%BD%E7%9A%84%E8%B5%B7%E7%82%B9/AlexNet%EF%BC%9A%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0%E9%9D%A9%E5%91%BD%E7%9A%84%E8%B5%B7%E7%82%B9.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"AlexNet：深度学习革命的起点\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 引言 2012 年，AlexNet 在 ImageNet 图像识别竞赛中取得了突破性的成绩，错误率从 26% 一举降到 15.3%，标志着深度学习正式进入计算机视觉的主流舞台。作为推动 AI 浪潮的重要模型，AlexNet 以其创新的网络结构和训练策略，彻底改变了传统机器学习在图像识别领域的地位。 这篇博客将从结构原理、关键技术、训练方法和影响力等...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:image\",\"content\":\"https://i-blog.csdnimg.cn/direct/e75c0e1a954441ce90ba9a350bb6e50b.png\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"深度学习\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-10-24T10:08:50.000Z\"}]]},\"readingTime\":{\"minutes\":5.13,\"words\":1539},\"filePathRelative\":\"blogs/0_深度学习/AlexNet：深度学习革命的起点/AlexNet：深度学习革命的起点.md\",\"excerpt\":\"<h2>0 引言</h2>\\n<p>2012 年，AlexNet 在 ImageNet 图像识别竞赛中取得了突破性的成绩，错误率从 26% 一举降到 15.3%，标志着深度学习正式进入计算机视觉的主流舞台。作为推动 AI 浪潮的重要模型，AlexNet 以其创新的网络结构和训练策略，彻底改变了传统机器学习在图像识别领域的地位。</p>\\n<p>这篇博客将从结构原理、关键技术、训练方法和影响力等多个角度，深入浅出地解析 AlexNet，帮助读者全面理解它为何能够开创深度学习时代。</p>\\n<h2>1 AlexNet 的网络结构</h2>\\n<p>AlexNet 是典型的卷积神经网络（CNN），深度为 8 层，其中包括 5 层卷积层和 3 层全连接层。其核心结构如下：</p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

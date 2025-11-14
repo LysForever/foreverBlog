@@ -1,0 +1,39 @@
+<template><div><h2 id="_0-引言" tabindex="-1"><a class="header-anchor" href="#_0-引言"><span>0 引言</span></a></h2>
+<p>众所周知，服务器的系统大多为ubantu这些以linux为内核开发的系统，并且为了减少硬盘的占用，一般都是用命令行去书写命令和编辑一些文件，这使得我这类习惯了windows开发的人感到很为难。并且大部分我们都会在本地开发或者下载一些文件，那么本地已经下载好了，就没必要再到服务器上敲一遍了，直接将本地文件上传至服务器就可以了。这一次我将用<strong>FileZilla</strong>实现这一功能。</p>
+<h2 id="_1-filezilla下载" tabindex="-1"><a class="header-anchor" href="#_1-filezilla下载"><span>1 FileZilla下载</span></a></h2>
+<p>FileZilla 是一款免费开源的 <strong>FTP/SFTP 客户端工具</strong>，支持跨平台（Windows/macOS/Linux），主要用于在本地计算机与远程服务器之间高效传输文件。其核心功能是通过多种协议（FTP、SFTP、FTPS）实现文件的上传、下载和管理。</p>
+<p>下载地址：<a href="https://filezilla-project.org/download.php?type=client" target="_blank" rel="noopener noreferrer">https://filezilla-project.org/download.php?type=client</a></p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/1a6260503fc14675ad8889e53261813a.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<p>下载最左边的版本就好</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/5e683edae9e14c3b97f3de8cf87114b7.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<p>下载成功后就是以下这个界面，主要分成四大块显示内容，重点时服务器连接的地方</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/c1b92f033fd14b47b4c320cc8a0d6d38.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h2 id="_2-连接服务器" tabindex="-1"><a class="header-anchor" href="#_2-连接服务器"><span>2 连接服务器</span></a></h2>
+<p>在FileZilla中，服务器的连接有两个地方可以实现这一功能，而服务器连接是大家出现主要问题的地方，因为连接方式的不对，很有可能导致始终连接不上去，如第一次使用，请按照我的方式连接能最大程度成功！</p>
+<h3 id="_2-1-快捷连接" tabindex="-1"><a class="header-anchor" href="#_2-1-快捷连接"><span>2.1 快捷连接</span></a></h3>
+<p>在刚才的主面板的上方可以直接连接服务器，这里主要填写以下四个内容即可</p>
+<ol>
+<li>主机：服务器ip地址（在服务器中都会显示<strong>公网ip地址！公网ip！公网ip！</strong>）</li>
+<li>用户名：root（一般没有特殊设置，<strong>都会是root</strong>）</li>
+<li>密码：服务器登陆密码</li>
+<li>端口：22（一般都会是ssh连接，就是22的端口号，如果22不行，就试一下21）</li>
+</ol>
+<p>设置成功后，再点击快捷连接即可连接成功，远程站点出现服务器的文件即表示连接成功</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/4683fe5309034fc4bf8a513632535168.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h3 id="_2-2-站点管理器连接" tabindex="-1"><a class="header-anchor" href="#_2-2-站点管理器连接"><span>2.2 站点管理器连接</span></a></h3>
+<p>这是第二种连接方式，通过这种方式，可以将此次连接的内容配置保存下来，下次直接点击即可连接成功。</p>
+<h4 id="_01-在左上角文件中点击站点管理器" tabindex="-1"><a class="header-anchor" href="#_01-在左上角文件中点击站点管理器"><span>01 在左上角<strong>文件</strong>中点击<strong>站点管理器</strong></span></a></h4>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/5a3961ef4c4b49519956ebe1e7629dc3.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h4 id="_02-点击新站点" tabindex="-1"><a class="header-anchor" href="#_02-点击新站点"><span>02 点击新站点</span></a></h4>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/8a41aa9bb31a42ccb3908d9b8cf06498.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h4 id="_03-右边再配置相关信息" tabindex="-1"><a class="header-anchor" href="#_03-右边再配置相关信息"><span>03 右边再配置相关信息</span></a></h4>
+<p>与前面的快捷连接相同，唯一需要注意的是协议选择**“SFTP - SSH File Transfer Protocol”**（不要选择其他，否则会报错，除非你不是这个连接方式，大部分连接都是ssh连接方式），可以参考我下方的填写方式。</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/9840022392b24d81982cfd0251dd5bf1.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<p>成功连接</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/ceb63dbe34374d74ba6b120824e73768.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h2 id="_3-上传文件至服务器" tabindex="-1"><a class="header-anchor" href="#_3-上传文件至服务器"><span>3 上传文件至服务器</span></a></h2>
+<p>将本地文件传至服务器，只需要将本地文件拖到服务器相应的文件夹即可上传，详见我下方的上传步骤</p>
+<figure><img src="@source/blogs/1_工具与框架/本地上传文件至服务器/assert/d5aedfb8d43d44888957110f8f5f58c4.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+</div></template>
+
+

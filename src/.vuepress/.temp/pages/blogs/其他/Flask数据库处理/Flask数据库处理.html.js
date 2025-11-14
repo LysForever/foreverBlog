@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/其他/Flask数据库处理/Flask数据库处理.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/%E5%85%B6%E4%BB%96/Flask%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86/Flask%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86.html\",\"title\":\"Flask数据库处理\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Flask数据库处理\",\"date\":\"2024-05-03T19:43:06.000Z\",\"categories\":[\"其他\"],\"tags\":[\"环境配置\"],\"sticky\":0,\"description\":\"flask_migrate新建数据库的表 第一次导入就需要新建migrate 接着执行数据库迁移和更新的语句 接着进入flask shell命令行 接着导入你需要新建的表（这里我是直接将这张表全部导入进来），导入后只要你修改系统都能自动帮你更新 然后执行创建和提交的命令\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Flask数据库处理\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2024-05-03T19:43:06.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/%E5%85%B6%E4%BB%96/Flask%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86/Flask%E6%95%B0%E6%8D%AE%E5%BA%93%E5%A4%84%E7%90%86.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Flask数据库处理\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"flask_migrate新建数据库的表 第一次导入就需要新建migrate 接着执行数据库迁移和更新的语句 接着进入flask shell命令行 接着导入你需要新建的表（这里我是直接将这张表全部导入进来），导入后只要你修改系统都能自动帮你更新 然后执行创建和提交的命令\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"环境配置\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2024-05-03T19:43:06.000Z\"}]]},\"readingTime\":{\"minutes\":0.46,\"words\":139},\"filePathRelative\":\"blogs/其他/Flask数据库处理/Flask数据库处理.md\",\"excerpt\":\"<p><strong>flask_migrate新建数据库的表</strong></p>\\n<p>第一次导入就需要新建migrate</p>\\n<div class=\\\"language- line-numbers-mode\\\" data-highlighter=\\\"shiki\\\" data-ext=\\\"\\\" style=\\\"--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34\\\"><pre class=\\\"shiki shiki-themes one-light one-dark-pro vp-code\\\"><code class=\\\"language-\\\"><span class=\\\"line\\\"><span>flask init</span></span></code></pre>\\n<div class=\\\"line-numbers\\\" aria-hidden=\\\"true\\\" style=\\\"counter-reset:line-number 0\\\"><div class=\\\"line-number\\\"></div></div></div>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

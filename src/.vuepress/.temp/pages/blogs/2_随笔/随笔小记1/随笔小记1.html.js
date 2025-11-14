@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/2_随笔/随笔小记1/随笔小记1.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/2_%E9%9A%8F%E7%AC%94/%E9%9A%8F%E7%AC%94%E5%B0%8F%E8%AE%B01/%E9%9A%8F%E7%AC%94%E5%B0%8F%E8%AE%B01.html\",\"title\":\"随笔小记1\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"随笔小记1\",\"date\":\"2025-11-08T00:48:00.000Z\",\"categories\":[\"随笔\"],\"tags\":[\"随笔\"],\"sticky\":0,\"description\":\"分享一些好看的图片，看完感觉心情会稍微好些，哈哈！ 【哲风壁纸】山脉远景-开阔天地【哲风壁纸】山脉远景-开阔天地 【哲风壁纸】安静氛围-森林【哲风壁纸】安静氛围-森林 【哲风壁纸】夏天森林-大树仰拍【哲风壁纸】夏天森林-大树仰拍 【哲风壁纸】夏天森林-大树仰拍【哲风壁纸】夏天森林-大树仰拍\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"随笔小记1\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-11-08T00:48:00.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/2_%E9%9A%8F%E7%AC%94/%E9%9A%8F%E7%AC%94%E5%B0%8F%E8%AE%B01/%E9%9A%8F%E7%AC%94%E5%B0%8F%E8%AE%B01.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"随笔小记1\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"分享一些好看的图片，看完感觉心情会稍微好些，哈哈！ 【哲风壁纸】山脉远景-开阔天地【哲风壁纸】山脉远景-开阔天地 【哲风壁纸】安静氛围-森林【哲风壁纸】安静氛围-森林 【哲风壁纸】夏天森林-大树仰拍【哲风壁纸】夏天森林-大树仰拍 【哲风壁纸】夏天森林-大树仰拍【哲风壁纸】夏天森林-大树仰拍\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"随笔\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-11-08T00:48:00.000Z\"}]]},\"readingTime\":{\"minutes\":0.31,\"words\":93},\"filePathRelative\":\"blogs/2_随笔/随笔小记1/随笔小记1.md\",\"excerpt\":\"<p>分享一些好看的图片，看完感觉心情会稍微好些，哈哈！</p>\\n<figure><figcaption>【哲风壁纸】山脉远景-开阔天地</figcaption></figure>\\n<figure><figcaption>【哲风壁纸】安静氛围-森林</figcaption></figure>\\n<figure><figcaption>【哲风壁纸】夏天森林-大树仰拍</figcaption></figure>\\n<figure><figcaption>【哲风壁纸】夏天森林-大树仰拍</figcaption></figure>\\n\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

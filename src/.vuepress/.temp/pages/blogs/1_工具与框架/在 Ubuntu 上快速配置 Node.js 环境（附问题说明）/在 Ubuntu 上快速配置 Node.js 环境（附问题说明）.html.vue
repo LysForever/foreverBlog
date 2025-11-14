@@ -1,0 +1,172 @@
+<template><div><h2 id="_0-概要" tabindex="-1"><a class="header-anchor" href="#_0-概要"><span>0 概要</span></a></h2>
+<p>本文基于Ubantu系统，全面详细展示如何一步步安装nodejs，并在此基础上，实现将一个vuepress项目拉取下来，并对其环境依赖进行配置，主要目的在于帮助大家快速配置nodejs和迅速利用nodejs进行一个新项目环境的配置。</p>
+<h2 id="_1-nodejs下载" tabindex="-1"><a class="header-anchor" href="#_1-nodejs下载"><span>1 nodejs下载</span></a></h2>
+<p>首先需要查看自己的电脑架构，因为Ubantu系统支持多种架构，比如我的是X86_64位的</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">uname</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -a</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p><img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/924470e5683a420d873b5a154c0088f7.png" alt="在这里插入图片描述" loading="lazy"><br>
+接着下载nodejs的安装包</p>
+<p>英文网址：<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener noreferrer">https://nodejs.org/en/download/</a></p>
+<p>中文网址：<a href="http://nodejs.cn/download/" target="_blank" rel="noopener noreferrer">http://nodejs.cn/download/</a><br>
+<img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/bc6a2bd9fa8749dca0436e17b753b32e.png" alt="在这里插入图片描述" loading="lazy"></p>
+<h2 id="_2-配置依赖" tabindex="-1"><a class="header-anchor" href="#_2-配置依赖"><span>2 配置依赖</span></a></h2>
+<h3 id="_2-1-解压安装包" tabindex="-1"><a class="header-anchor" href="#_2-1-解压安装包"><span>2.1 解压安装包</span></a></h3>
+<p>在uabntu22.04最新的系统中，从浏览器中打开安装包的位置时，系统会自动将tar安装包解压，十分方便。<br>
+对于其他不能自动解压的，输入下述命令即可！</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">tar</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -xvf</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  node-v14.18.0-linux-x64.tar.xz</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="_2-2-移动位置" tabindex="-1"><a class="header-anchor" href="#_2-2-移动位置"><span>2.2 移动位置</span></a></h3>
+<p>一般需要将这种环境包安装在特定的位置，直接将其移动即可（自己定义位置）</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">mv</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> node-v14.18.0-linux-x64</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/envs/nodejs</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>确认一下nodejs下bin目录是否有node 和npm文件，如果有执行下一步，如果没有重新下载执行上边步骤；</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> bin</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">ls</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/f0de85c36b6e40ca835b3d1194afd55d.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h3 id="_2-3-建立软连接-使其全局访问" tabindex="-1"><a class="header-anchor" href="#_2-3-建立软连接-使其全局访问"><span>2.3 建立软连接，使其全局访问</span></a></h3>
+<p>这里的路径需要修改成自己的路径</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ln</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -s</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/envs/nodejs/bin/npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /usr/local/bin/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">duso</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ln</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -s</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">  ~/envs/nodejs/bin/node</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> /usr/local/bin/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>检查是否配置成功</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">node</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/d087a15ef3d74404884001fc856bf49c.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<h3 id="_2-4-配置镜像原" tabindex="-1"><a class="header-anchor" href="#_2-4-配置镜像原"><span>2.4 配置镜像原</span></a></h3>
+<p>由于网络限制，需要将其配置其他镜像原，不然下载速度很慢</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> registry</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://registry.npmmirror.com/</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> get</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> registry</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><figure><img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/b906bd895e0f4ea9ba91f7355d686b92.png" alt="在这里插入图片描述" tabindex="0" loading="lazy"><figcaption>在这里插入图片描述</figcaption></figure>
+<blockquote>
+<p>到此为止，nodejs已经配置成功！</p>
+</blockquote>
+<h2 id="_3-nodejs的使用" tabindex="-1"><a class="header-anchor" href="#_3-nodejs的使用"><span>3 NodeJs的使用</span></a></h2>
+<p>这里以拉去一个Vuepress项目为例，将一个完整的Vuepress项目拉取下来，并利用Nodejs对其配置，获取其依赖</p>
+<h3 id="_3-1-安装依赖" tabindex="-1"><a class="header-anchor" href="#_3-1-安装依赖"><span>3.1 安装依赖</span></a></h3>
+<p>进入Vuepress项目中，执行下述命令，自动安装依赖，其他相关的项目按照所示进行执行也是一样的</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h3 id="_3-2-问题解决" tabindex="-1"><a class="header-anchor" href="#_3-2-问题解决"><span>3.2 问题解决</span></a></h3>
+<p>Vuepress没有权限写入<br>
+<img src="@source/blogs/1_工具与框架/在 Ubuntu 上快速配置 Node.js 环境（附问题说明）/assets/e8664fa4a527482d980d264aa82f3fd5.png" alt="在这里插入图片描述" loading="lazy"><br>
+修改权限</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2">cd</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> node_modules/.bin</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">chmod</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> +x</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> vuepress</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>之后再执行运行命令即可运行，原因在于此项目只有读写权限，没有执行权限，修改权限即可</p>
+<h2 id="_4-安装-node-js-的常见问题及解决方法" tabindex="-1"><a class="header-anchor" href="#_4-安装-node-js-的常见问题及解决方法"><span>4 安装 Node.js 的常见问题及解决方法</span></a></h2>
+<blockquote>
+<p>在安装 Node.js 的过程中，可能会遇到一些常见问题。以下是一些常见问题及其解决方法，帮助你顺利完成 Node.js 的安装与配置。</p>
+</blockquote>
+<h3 id="_4-1-node-js-安装失败" tabindex="-1"><a class="header-anchor" href="#_4-1-node-js-安装失败"><span>4.1 Node.js 安装失败</span></a></h3>
+<p><strong>问题描述</strong>：在 Windows 或 macOS 系统上安装 Node.js 时，安装程序提示失败或者无法启动。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li>
+<p><strong>检查系统兼容性</strong>：确保下载的 Node.js 版本与操作系统兼容。32 位系统需下载 x86 版本，64 位系统需下载 x64 版本。</p>
+</li>
+<li>
+<p><strong>以管理员权限运行</strong>：在 Windows 上右键安装程序选择“以管理员身份运行”。</p>
+</li>
+<li>
+<p><strong>清理旧版本</strong>：如果之前安装过 Node.js，先卸载旧版本并删除相关环境变量，然后重新安装。</p>
+</li>
+<li>
+<p><strong>使用包管理器安装</strong>：</p>
+<ul>
+<li>Windows：使用 <code v-pre>choco install nodejs</code>（需先安装 Chocolatey）。</li>
+<li>macOS：使用 <code v-pre>brew install node</code>（需先安装 Homebrew）。</li>
+<li>Linux：使用官方包管理命令，如 Ubuntu：</li>
+</ul>
+</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">curl</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -fsSL</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> https://deb.nodesource.com/setup_20.x</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> | </span><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -E</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> bash</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> -</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> apt-get</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -y</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> nodejs</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><hr>
+<h3 id="_4-2-node-js-命令无法识别" tabindex="-1"><a class="header-anchor" href="#_4-2-node-js-命令无法识别"><span>4.2 Node.js 命令无法识别</span></a></h3>
+<p><strong>问题描述</strong>：安装完成后，在终端输入 <code v-pre>node -v</code> 或 <code v-pre>npm -v</code> 提示命令未找到。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li>
+<p><strong>检查环境变量</strong>：</p>
+<ul>
+<li>Windows：确认 Node.js 安装路径（如 <code v-pre>C:\Program Files\nodejs\</code>）已加入系统 <code v-pre>PATH</code>。</li>
+<li>macOS/Linux：确保 <code v-pre>node</code> 所在路径在 <code v-pre>PATH</code> 中，例如：</li>
+</ul>
+</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">export</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> PATH</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">$PATH</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">usr</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">local</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">bin</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">node</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><ol start="2">
+<li><strong>重启终端或电脑</strong>：环境变量修改后，需要重新启动终端或系统。</li>
+<li><strong>验证安装路径</strong>：</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> which</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> node</span></span>
+<span class="line"><span style="--shiki-light:#0184BC;--shiki-dark:#56B6C2"> which</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> npm</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><hr>
+<h3 id="_4-3-npm-安装包失败" tabindex="-1"><a class="header-anchor" href="#_4-3-npm-安装包失败"><span>4.3 npm 安装包失败</span></a></h3>
+<p><strong>问题描述</strong>：使用 <code v-pre>npm install</code> 时出现权限错误或网络超时。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li><strong>权限问题</strong>：</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> sudo</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF"> &#x3C;</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379">package_nam</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">e></span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><p>或配置 npm 全局安装目录：</p>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   mkdir</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> ~/.npm-global</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> config</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> set</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> prefix</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> '~/.npm-global'</span></span>
+<span class="line"><span style="--shiki-light:#A626A4;--shiki-dark:#C678DD">   export</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75"> PATH</span><span style="--shiki-light:#383A42;--shiki-dark:#56B6C2">=</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">~/.</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">npm-global</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">/</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">bin</span><span style="--shiki-light:#383A42;--shiki-dark:#ABB2BF">:</span><span style="--shiki-light:#E45649;--shiki-dark:#E06C75">$PATH</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li>
+<p><strong>网络问题</strong>：</p>
+<ul>
+<li>切换 npm 源为国内镜像：</li>
+</ul>
+</li>
+</ol>
+<p>``bash<br>
+npm config set registry <a href="https://registry.npmmirror.com/" target="_blank" rel="noopener noreferrer">https://registry.npmmirror.com/</a><br>
+```</p>
+<ul>
+<li>或使用 <code v-pre>yarn</code> 替代 npm：</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> yarn</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   yarn</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><hr>
+<h3 id="_4-4-node-js-与-npm-版本不一致" tabindex="-1"><a class="header-anchor" href="#_4-4-node-js-与-npm-版本不一致"><span>4.4 Node.js 与 npm 版本不一致</span></a></h3>
+<p><strong>问题描述</strong>：安装完成后 Node.js 和 npm 版本不匹配，或者某些包要求特定版本。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li>
+<p><strong>使用 n 或 nvm 管理 Node.js 版本</strong>：</p>
+<ul>
+<li><strong>nvm (Node Version Manager)</strong>：</li>
+</ul>
+</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   nvm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 20</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   nvm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> use</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> 20</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ul>
+<li><strong>n (Node 版本管理工具)</strong>：</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">   npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> n</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF">    n</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> stable</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><ol start="2">
+<li><strong>升级 npm</strong>：</li>
+</ol>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> npm</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> install</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -g</span><span style="--shiki-light:#50A14F;--shiki-dark:#98C379"> npm@latest</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><hr>
+<h3 id="_4-5-windows-防火墙或杀毒拦截安装" tabindex="-1"><a class="header-anchor" href="#_4-5-windows-防火墙或杀毒拦截安装"><span>4.5 Windows 防火墙或杀毒拦截安装</span></a></h3>
+<p><strong>问题描述</strong>：安装或运行 Node.js 时被防火墙或杀毒软件阻止。</p>
+<p><strong>解决方案</strong>：</p>
+<ol>
+<li>临时关闭防火墙或杀毒软件，安装完成后再开启。</li>
+<li>添加 Node.js 及 npm 到防火墙/杀毒软件白名单。</li>
+</ol>
+<hr>
+<h3 id="_4-6-其他建议" tabindex="-1"><a class="header-anchor" href="#_4-6-其他建议"><span>4.6 其他建议</span></a></h3>
+<ul>
+<li>尽量使用 <strong>LTS（长期支持）版本</strong>，兼容性和稳定性更好。</li>
+<li>安装完成后执行：</li>
+</ul>
+<div class="language-bash line-numbers-mode" data-highlighter="shiki" data-ext="bash" style="--shiki-light:#383A42;--shiki-dark:#abb2bf;--shiki-light-bg:#FAFAFA;--shiki-dark-bg:#282c34"><pre class="shiki shiki-themes one-light one-dark-pro vp-code" v-pre=""><code class="language-bash"><span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> node</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span>
+<span class="line"><span style="--shiki-light:#4078F2;--shiki-dark:#61AFEF"> npm</span><span style="--shiki-light:#986801;--shiki-dark:#D19A66"> -v</span></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div></div></div><p>确认版本正确。</p>
+<ul>
+<li>遇到问题，可查阅官方文档：<a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">Node.js 官方文档</a></li>
+</ul>
+</div></template>
+
+

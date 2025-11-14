@@ -1,0 +1,16 @@
+import comp from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/pages/blogs/1_工具与框架/Zotero配置chatgpt和腾讯元宝大模型/Zotero配置chatgpt和腾讯元宝大模型.html.vue"
+const data = JSON.parse("{\"path\":\"/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/Zotero%E9%85%8D%E7%BD%AEchatgpt%E5%92%8C%E8%85%BE%E8%AE%AF%E5%85%83%E5%AE%9D%E5%A4%A7%E6%A8%A1%E5%9E%8B/Zotero%E9%85%8D%E7%BD%AEchatgpt%E5%92%8C%E8%85%BE%E8%AE%AF%E5%85%83%E5%AE%9D%E5%A4%A7%E6%A8%A1%E5%9E%8B.html\",\"title\":\"Zotero配置chatgpt和腾讯元宝大模型\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"Zotero配置chatgpt和腾讯元宝大模型\",\"date\":\"2025-09-27T14:09:11.000Z\",\"categories\":[\"工具与框架\"],\"tags\":[\"环境配置\"],\"sticky\":0,\"description\":\"0 引言 今天为大家介绍如何在zotero中配置大模型，其中包括系统中存在的一些大模型，如chatgpt、deepseek等，但还有一些大模型并不在系统的配置内，如腾讯元宝等。因为作为”白嫖客“，我们总是需要切换各类大模型来保证日常的使用，但是有一些大模型并不存在于系统内部，所以在这里以chatgpt（已内置）和腾讯元宝（未内置）的连接示例，为大家提供...\",\"head\":[[\"script\",{\"type\":\"application/ld+json\"},\"{\\\"@context\\\":\\\"https://schema.org\\\",\\\"@type\\\":\\\"Article\\\",\\\"headline\\\":\\\"Zotero配置chatgpt和腾讯元宝大模型\\\",\\\"image\\\":[\\\"\\\"],\\\"datePublished\\\":\\\"2025-09-27T14:09:11.000Z\\\",\\\"dateModified\\\":null,\\\"author\\\":[{\\\"@type\\\":\\\"Person\\\",\\\"name\\\":\\\"二进制星辰\\\",\\\"url\\\":\\\"https://blog.csdn.net/qq_63786218?type=blog\\\"}]}\"],[\"meta\",{\"property\":\"og:url\",\"content\":\"https://mister-hope.github.io/blogs/1_%E5%B7%A5%E5%85%B7%E4%B8%8E%E6%A1%86%E6%9E%B6/Zotero%E9%85%8D%E7%BD%AEchatgpt%E5%92%8C%E8%85%BE%E8%AE%AF%E5%85%83%E5%AE%9D%E5%A4%A7%E6%A8%A1%E5%9E%8B/Zotero%E9%85%8D%E7%BD%AEchatgpt%E5%92%8C%E8%85%BE%E8%AE%AF%E5%85%83%E5%AE%9D%E5%A4%A7%E6%A8%A1%E5%9E%8B.html\"}],[\"meta\",{\"property\":\"og:site_name\",\"content\":\"博客演示\"}],[\"meta\",{\"property\":\"og:title\",\"content\":\"Zotero配置chatgpt和腾讯元宝大模型\"}],[\"meta\",{\"property\":\"og:description\",\"content\":\"0 引言 今天为大家介绍如何在zotero中配置大模型，其中包括系统中存在的一些大模型，如chatgpt、deepseek等，但还有一些大模型并不在系统的配置内，如腾讯元宝等。因为作为”白嫖客“，我们总是需要切换各类大模型来保证日常的使用，但是有一些大模型并不存在于系统内部，所以在这里以chatgpt（已内置）和腾讯元宝（未内置）的连接示例，为大家提供...\"}],[\"meta\",{\"property\":\"og:type\",\"content\":\"article\"}],[\"meta\",{\"property\":\"og:locale\",\"content\":\"zh-CN\"}],[\"meta\",{\"property\":\"article:tag\",\"content\":\"环境配置\"}],[\"meta\",{\"property\":\"article:published_time\",\"content\":\"2025-09-27T14:09:11.000Z\"}]]},\"readingTime\":{\"minutes\":3.54,\"words\":1061},\"filePathRelative\":\"blogs/1_工具与框架/Zotero配置chatgpt和腾讯元宝大模型/Zotero配置chatgpt和腾讯元宝大模型.md\",\"excerpt\":\"<h2>0 引言</h2>\\n<p>今天为大家介绍如何在zotero中配置大模型，其中包括系统中存在的一些大模型，如chatgpt、deepseek等，但还有一些大模型并不在系统的配置内，如腾讯元宝等。因为作为”白嫖客“，我们总是需要切换各类大模型来保证日常的使用，但是有一些大模型并不存在于系统内部，所以在这里以chatgpt（已内置）和腾讯元宝（未内置）的连接示例，为大家提供不同形式的连接方式。</p>\\n<h2>1 插件下载</h2>\\n<p>首先需要下载<code>Awesome GPT</code>，这里我是先将其下载到本地，再导入软件。</p>\\n<p>下载链接：<a href=\\\"https://zotero-chinese.com/plugins/\\\" target=\\\"_blank\\\" rel=\\\"noopener noreferrer\\\">https://zotero-chinese.com/plugins/</a></p>\",\"autoDesc\":true}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}
