@@ -34,7 +34,11 @@ export default hopeTheme({
     description: "一个正在迷茫的小羔羊",
     intro: "https://blog.csdn.net/qq_63786218?type=blog",
     medias: {
-      CSDN: "https://blog.csdn.net/qq_63786218?type=blog",
+      CSDN: {
+        icon:"https://simpleicons.org/icons/csdn.svg",
+        link:"https://blog.csdn.net/qq_63786218?type=blog",
+      },
+      // github:"https://blog.csdn.net/qq_63786218?type=blog"
     },
   },
 
@@ -49,9 +53,9 @@ export default hopeTheme({
   },
 
   // 多语言配置
-  metaLocales: {
-    // editLink: "在 GitHub 上编辑此页",
-  },
+  // metaLocales: {
+  //   // editLink: "在 GitHub 上编辑此页",
+  // },
 
   // 如果想要实时查看任何改变，启用它。注: 这对更新性能有很大负面影响
   // hotReload: true,
@@ -127,7 +131,7 @@ export default hopeTheme({
     
 
     blog: true,
-
+    slimsearch: true,
     // components: {
     //   components: ["Badge", "VPCard"],
     // },

@@ -1,24 +1,25 @@
-import * as clientConfig0 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/git/config.js'
-import * as clientConfig1 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/shiki/config.js'
-import * as clientConfig2 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/sass-palette/load-hope.js'
-import * as clientConfig3 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-chart/config.js'
-import * as clientConfig4 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-ext/config.js'
-import * as clientConfig5 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-markdown-hint/lib/client/config.js'
-import * as clientConfig6 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-tab/config.js'
-import * as clientConfig7 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-image/client.js'
-import * as clientConfig8 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-stylize/config.js'
-import * as clientConfig9 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
-import * as clientConfig10 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-back-to-top/lib/client/config.js'
-import * as clientConfig11 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
-import * as clientConfig12 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/icon/config.js'
-import * as clientConfig13 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'
-import * as clientConfig14 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/components/config.js'
-import * as clientConfig15 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
-import * as clientConfig16 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
-import * as clientConfig17 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
-import * as clientConfig18 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
-import * as clientConfig19 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/theme-hope/config.js'
-import * as clientConfig20 from 'E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/src/.vuepress/.temp/markdown-math/config.js'
+import * as clientConfig0 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/git/config.js'
+import * as clientConfig1 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/shiki/config.js'
+import * as clientConfig2 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/sass-palette/load-hope.js'
+import * as clientConfig3 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-chart/config.js'
+import * as clientConfig4 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-ext/config.js'
+import * as clientConfig5 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-markdown-hint/lib/client/config.js'
+import * as clientConfig6 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-tab/config.js'
+import * as clientConfig7 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-image/client.js'
+import * as clientConfig8 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-stylize/config.js'
+import * as clientConfig9 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
+import * as clientConfig10 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-back-to-top/lib/client/config.js'
+import * as clientConfig11 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-copy-code/lib/client/config.js'
+import * as clientConfig12 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/icon/config.js'
+import * as clientConfig13 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-photo-swipe/lib/client/config.js'
+import * as clientConfig14 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/components/config.js'
+import * as clientConfig15 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-active-header-links/lib/client/config.js'
+import * as clientConfig16 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-catalog/lib/client/config.js'
+import * as clientConfig17 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
+import * as clientConfig18 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-slimsearch/lib/client/config.js'
+import * as clientConfig19 from 'D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-redirect/lib/client/config.js'
+import * as clientConfig20 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/theme-hope/config.js'
+import * as clientConfig21 from 'D:/lys/projects/projects/foreverblog/src/.vuepress/.temp/markdown-math/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -42,4 +43,5 @@ export const clientConfigs = [
   clientConfig18,
   clientConfig19,
   clientConfig20,
+  clientConfig21,
 ].map((m) => m.default).filter(Boolean)

@@ -1,4 +1,4 @@
-import { GitContributors } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-git/lib/client/components/GitContributors.js";
+import { GitContributors } from "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-git/lib/client/components/GitContributors.js";
 
 export default {
   enhance: ({ app }) => {

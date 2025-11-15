@@ -1,2 +1,2 @@
-    import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/footnote.css"
-    import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/tasklist.css"
+    import "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/footnote.css"
+    import "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-markdown-ext/lib/client/styles/tasklist.css"

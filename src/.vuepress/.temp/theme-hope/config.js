@@ -1,17 +1,17 @@
-import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/exports/base.js";
+import { Layout, NotFound, injectDarkMode, setupDarkMode, setupSidebarItems, scrollPromise } from "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/exports/base.js";
 
-import { defineCatalogInfoGetter } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
+import { defineCatalogInfoGetter } from "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-catalog/lib/client/index.js"
 import { h } from "vue"
 import { resolveComponent } from "vue"
-import { Blog, BloggerInfo, SocialMedias, setupBlog } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/exports/blog.js";
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/styles/blog/bundle.scss";
-import { GlobalEncrypt, LocalEncrypt } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/exports/encrypt.js";
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/styles/encrypt/bundle.scss"
+import { Blog, BloggerInfo, SocialMedias, setupBlog } from "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/exports/blog.js";
+import "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/styles/blog/bundle.scss";
+import { GlobalEncrypt, LocalEncrypt } from "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/exports/encrypt.js";
+import "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/styles/encrypt/bundle.scss"
 
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/helper/lib/client/styles/colors.css";
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
-import "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/vuepress-theme-hope/lib/bundle/styles/bundle.scss";
+import "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/helper/lib/client/styles/colors.css";
+import "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/helper/lib/client/styles/normalize.css";
+import "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/helper/lib/client/styles/sr-only.css";
+import "D:/lys/projects/projects/foreverblog/node_modules/vuepress-theme-hope/lib/bundle/styles/bundle.scss";
 
 defineCatalogInfoGetter((meta) => {
   const title = meta.title;

@@ -1,6 +1,7 @@
 import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
-  // "/",
-  // "/blogs/",
+  "/",
+  "/深度学习/",
+  "/随笔/"
 ]);

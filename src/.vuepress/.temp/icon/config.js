@@ -1,7 +1,7 @@
-import { hasGlobalComponent } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/helper/lib/client/index.js";
-import { useScriptTag } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vueuse/core/dist/index.js";
+import { hasGlobalComponent } from "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/helper/lib/client/index.js";
+import { useScriptTag } from "D:/lys/projects/projects/foreverblog/node_modules/@vueuse/core/dist/index.js";
 import { h } from "vue";
-import { VPIcon } from "E:/Resources/Projects/MyProjects/LysBlog/foreverBlogs/node_modules/@vuepress/plugin-icon/lib/client/index.js"
+import { VPIcon } from "D:/lys/projects/projects/foreverblog/node_modules/@vuepress/plugin-icon/lib/client/index.js"
 
 export default {
   enhance: ({ app }) => {
