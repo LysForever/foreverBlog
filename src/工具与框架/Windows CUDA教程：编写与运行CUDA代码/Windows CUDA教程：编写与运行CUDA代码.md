@@ -6,7 +6,7 @@ categories:
 tags:
   - cuda
   - 环境配置
-sticky: 1
+sticky: 0
 ---
 
 

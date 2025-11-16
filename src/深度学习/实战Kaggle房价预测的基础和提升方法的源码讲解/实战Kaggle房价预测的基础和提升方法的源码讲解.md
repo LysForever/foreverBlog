@@ -5,7 +5,7 @@ categories:
   - 深度学习
 tags:
   - 深度学习
-sticky: 1
+sticky: 0
 ---
 
 

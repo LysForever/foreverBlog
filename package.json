@@ -10,7 +10,7 @@
     "docs:dev": "vuepress-vite dev src",
     "docs:update-package": "npx vp-update",
     "docs:deploy": "cd src/.vuepress/dist && rm -rf .git && git init && git add . && git commit -m 'deploy' && git push -f git@github.com:LysForever/foreverBlog.git master:gh-pages",
-    "deploy": "npm run docs:build && npm run docs:deploy",
+    "deploy": "npm run docs:build && npm run docs:deploy&&npm run code",
     "code": "git checkout code && git add . && git commit -m \"update project code\" && git push -f git@github.com:LysForever/foreverBlog.git code"
   },
   "devDependencies": {
